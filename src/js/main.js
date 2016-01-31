@@ -13,6 +13,8 @@ $(document).ready(function() {
 
     function checkAlfaStatus() {
 
+        console.clear();
+        console.info('Ultimo caracter es un número?', (!alfa) ? 'Si!': 'No!');
         //si es positivo, deshabilitamos los botones
         if (alfa) {
             messageBox.removeClass('hidden').addClass('red');
@@ -30,6 +32,8 @@ $(document).ready(function() {
     }
 
     function checkBinStatus() {
+
+        console.warn('El número es un posible binario?', (bin) ? 'Si!': 'No!');
 
         //si es positivo, deshabilitamos los botones
         if (!bin){
@@ -82,6 +86,7 @@ $(document).ready(function() {
 
     //ejecutar la funcion de reinicio con el boton de reinicio
     reset.on('click', function() {
+        console.clear();
         resetStatus();
     });
 });
