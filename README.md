@@ -10,7 +10,7 @@
 
 ## Demo
 
-Para ver el proyecto, puede ingresat [aquí](http://webpty.com/uip/metodos)
+Para ver el proyecto, puede ingresar [aquí](http://webpty.com/uip/metodos)
 
 ## Licencia
 
