@@ -2,51 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a40a180-f502-4efc-adf4-1c2d1ff95757" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/logo.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/crossdomain.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/TOC.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/css.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/extend.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/faq.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/html.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/js.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/misc.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/usage.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/humans.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/vendor/modernizr-2.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tile-wide.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tile.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/vendor/jquery.min.js" afterPath="$PROJECT_DIR$/src/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/vendor/semantic.min.js" afterPath="$PROJECT_DIR$/src/js/semantic.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.eot" afterPath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.ttf" afterPath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.woff" afterPath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.eot" afterPath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.otf" afterPath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.ttf" afterPath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.woff" afterPath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.woff2" afterPath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/default/assets/images/flags.png" afterPath="$PROJECT_DIR$/src/css/themes/default/assets/images/flags.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons-local.ttf" afterPath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons-local.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons.ttf" afterPath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons.woff" afterPath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/metodos.iml" afterPath="$PROJECT_DIR$/.idea/metodos.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/crossdomain.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/TOC.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/css.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/extend.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/faq.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/html.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/js.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/misc.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/usage.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/humans.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/vendor/jquery-1.12.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/vendor/modernizr-2.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/tile-wide.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/tile.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/semantic.min.css" afterPath="$PROJECT_DIR$/src/css/semantic.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.svg" afterPath="$PROJECT_DIR$/src/css/themes/basic/assets/fonts/icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.svg" afterPath="$PROJECT_DIR$/src/css/themes/default/assets/fonts/icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons.svg" afterPath="$PROJECT_DIR$/src/css/themes/github/assets/fonts/octicons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main.js" afterPath="$PROJECT_DIR$/src/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/robots.txt" afterPath="$PROJECT_DIR$/src/robots.txt" />
     </list>
     <ignored path="metodos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,7 +76,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35565314">
+            <state vertical-scroll-proportion="0.489426">
               <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding />
             </state>
@@ -291,6 +277,13 @@
       <option name="number" value="Default" />
       <updated>1454278269568</updated>
     </task>
+    <task id="LOCAL-00001" summary="more commit">
+      <created>1454370196973</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1454370196973</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -298,13 +291,14 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26517573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26517573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13258786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18849841" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -322,6 +316,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="more commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="more commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -384,7 +382,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35565314">
+        <state vertical-scroll-proportion="0.489426">
           <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding />
         </state>
