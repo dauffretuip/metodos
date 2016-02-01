@@ -4,74 +4,68 @@ var decimal = $('.decimal');
 var reset = $('.reset');
 var alfa = false;
 var bin = true;
-var messageBox = $('.message');
-var messageText = $('.message .content p');
-var messageIcon = $('.message .icon');
+var messageBox = $('.estado');
+var messageText = $('.estado .content p');
+var messageIcon = $('.estado .icon');
+var resultado = $('.resultado');
 
 
 $(document).ready(function() {
 
     function checkAlfaStatus() {
-
-        console.clear();
         console.info('Ultimo caracter es un número?', (!alfa) ? 'Si!': 'No!');
+
         //si es positivo, deshabilitamos los botones
         if (alfa) {
-            messageBox.removeClass('hidden').addClass('red');
+            console.log(111);
+            messageBox.removeClass().addClass('ui icon message estado red');
             messageText.text('El número solo puede contener dígitos.');
             messageIcon.removeClass().addClass('warning sign icon');
-
             binario.attr('disabled', true);
             decimal.attr('disabled', true);
-        } else {
-            messageBox.addClass('hidden');
-
-            binario.attr('disabled', false);
-            decimal.attr('disabled', false);
         }
     }
 
     function checkBinStatus() {
-
         console.warn('El número es un posible binario?', (bin) ? 'Si!': 'No!');
 
         //si es positivo, deshabilitamos los botones
         if (!bin){
-            messageBox.removeClass('hidden').addClass('blue');
+            messageBox.removeClass().addClass('ui icon message estado blue');
             messageText.text('Este número solo podrá ser convertido a binario.');
             messageIcon.removeClass().addClass('info circle icon');
-
             decimal.attr('disabled', true);
+        }
+    }
 
+    function checkIfAllOk() {
+        if (!alfa && bin){
+            binario.attr('disabled', false);
+            decimal.attr('disabled', false);
+            messageBox.addClass('hidden');
         }
     }
 
     function typeNumber() {
-
         var val = input.val();
-        var lastone = val.toString().split('').pop();
 
-        //verificamos si lo ingresado es un numero
-        if($.isNumeric(val)) {
-            alfa = false;
+        //evaluamos si el valor ingresado contiene solo digitos y si es un posible binario
+        var isNumber = val.match(new RegExp('^[0-9]+$'));
+        var isBin = val.search(/^[10]+$/) != -1;
 
-            //verificamos si el ultimo numero es un posible binario
-            if(lastone > 1) {
-                bin = false;
-            }
-        }
-        else {
-            alfa = true;
-        }
+        //asignamos valores a las variables globales
+        bin = (isBin);
+        alfa = (!isNumber);
+
         //llamamos a las funciones de cambio de estado
-        checkAlfaStatus();
         checkBinStatus();
+        checkAlfaStatus();
+        checkIfAllOk();
     }
 
 
 
     function resetStatus() {
-
         //reiniciar el formulario
         binario.attr('disabled', false);
         decimal.attr('disabled', false);
@@ -81,6 +75,7 @@ $(document).ready(function() {
 
     //llamar la funcion que maneja la verificación del numero
     input.on('keyup', function() {
+        console.clear();
         typeNumber();
     });
 
@@ -88,5 +83,15 @@ $(document).ready(function() {
     reset.on('click', function() {
         console.clear();
         resetStatus();
+    });
+
+    //si le das click al boton de binario, ejecutar esto
+    binario.on('click', function() {
+        resultado.show();
+    });
+
+    //si le das click al boton de decimal, ejecutar esto
+    decimal.on('click', function() {
+        resultado.show();
     });
 });

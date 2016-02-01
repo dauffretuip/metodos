@@ -12,112 +12,117 @@
 
     <link rel="stylesheet" href="css/semantic.min.css">
 </head>
+
+<style type="text/css">
+
+    body {
+        background-color: #2f2f2f;
+    }
+    body > .grid {
+        height: 100%;
+    }
+    .image {
+        margin-top: -100px;
+    }
+    .column {
+        max-width: 450px;
+    }
+
+</style>
+
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
-<div class="ui vertical stripe quote segment">
-    <div class="ui equal width equal height stackable grid container">
-        <div class="center aligned row">
-            <div class="column">
-                <div class="ui centered card">
-                    <div class="content">
-                        <h1 class="header">Métodos Numéricos</h1>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <a href="#" class="header item">
+                <img class="logo" src="img/logo.png" width="30">
+            </a>
+            <a href="#" class="header item">
+                 Métodos Numéricos
+            </a>
 
-                        <div class="ui icon warning message hidden">
-                            <i class="icon"></i>
-                            <div class="content">
-                                <p></p>
-                            </div>
-                        </div>
+            <div class="ui simple right floated dropdown item">
+                Detalles del programa <i class="dropdown icon"></i>
+                <div class="menu">
 
-                        <form class="ui form">
-                            <div class="field">
-                                <input type="tel" id="numero" placeholder="Favor ingresar un número" autofocus>
-                            </div>
+                    <a href="https://github.com/dauffretuip/metodos" target="_blank" class="item">
+                        <i class="github small icon"></i> Repositorio Git
+                    </a>
 
-                            <div class="field">
-                                <div class="ui fluid buttons">
-                                    <button class="ui yellow button binario">
-                                        <i class="calculator icon"></i>
-                                        Binario
-                                    </button>
-                                    <div class="or"></div>
-                                    <button class="ui teal button decimal">
-                                        <i class="calculator icon"></i>
-                                        Decimal
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="divider"></div>
+                    <div class="header">Autor: David Auffret</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+
+            <h2 class="ui blue image header">
+                <div class="content">
+                    Proyecto 1
+                </div>
+            </h2>
+
+            <div class="ui icon message hidden estado">
+                <i class="icon"></i>
+                <div class="content">
+                    <p></p>
+                </div>
+            </div>
+
+            <form class="ui large form">
+                <div class="ui stacked segment">
 
 
-                            <div class="ui icon green message">
-                                <i class="student icon"></i>
-                                <div class="content">
-                                    <p class="ConvertingNumber">123123123</p>
-                                    <p class="ConvertMethod">en binario es</p>
-                                    <p class="ConvertedNumber">10101010101</p>
-                                </div>
-                            </div>
-
-                        </form>
+                    <div class="field">
+                        <input type="tel" id="numero" placeholder="Favor ingresar un número" autofocus>
                     </div>
-                    <div class="extra content">
-                        <div class="field">
-                            <button type="reset" class="ui fluid grey button reset">
-                                <i class="refresh icon"></i>
-                                Reiniciar
+
+                    <div class="field">
+                        <div class="ui fluid buttons">
+                            <button class="ui yellow button binario">
+                                <i class="calculator icon"></i>
+                                Binario
+                            </button>
+                            <div class="or"></div>
+                            <button class="ui teal button decimal">
+                                <i class="calculator icon"></i>
+                                Decimal
                             </button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
-<div class="ui vertical stripe quote segment">
-    <div class="ui equal width equal height stackable grid container">
-        <div class="center aligned row">
-            <div class="column">
-                <div class="ui centered card">
-                    <div class="content">
-                        <h1 class="header">Datos sobre este programa:</h1>
-
-                        <div class="ui icon grey message">
-                            <i class="github icon"></i>
-                            <div class="content">
-                                Repositorio Git: <a href="https://github.com/dauffretuip/metodos">Link</a>
-                            </div>
+                    <div class="ui icon green message hidden resultado">
+                        <i class="student icon"></i>
+                        <div class="content">
+                            <p class="ConvertingNumber">123123123</p>
+                            <p class="ConvertMethod">en binario es</p>
+                            <p class="ConvertedNumber">10101010101</p>
                         </div>
-
-                        <div class="ui icon grey message">
-                            <i class="html5 icon"></i>
-                            <div class="content">
-                                HTML 5
-                            </div>
-                        </div>
-
-                        <div class="ui icon grey message">
-                            <i class="css3 icon"></i>
-                            <div class="content">
-                                CSS 3
-                            </div>
-                        </div>
-
                     </div>
+
                 </div>
+
+                <div class="ui error message"></div>
+
+            </form>
+
+            <div class="ui message">
+                <button type="reset" class="ui fluid grey button reset">
+                    <i class="refresh icon"></i>
+                    Reiniciar
+                </button>
             </div>
+
         </div>
     </div>
-</div>
-
-
-<script src="js/vendor/jquery.min.js"></script>
-<script src="js/vendor/semantic.min.js"></script>
-<script src="js/main.js"></script>
-
 </body>
 </html>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/semantic.min.js"></script>
+<script src="js/main.js"></script>
