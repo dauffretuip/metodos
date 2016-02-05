@@ -47,20 +47,36 @@ $(document).ready(function() {
     }
 
     function typeNumber() {
+
+        //buscamos el valor de lo ingresado
         var val = input.val();
 
-        //evaluamos si el valor ingresado contiene solo digitos y si es un posible binario
-        var isNumber = val.match(new RegExp('^[0-9]+$'));
-        var isBin = val.search(/^[10]+$/) != -1;
+        //si hay algo ingresado, evaluarlo
+        if(val){
 
-        //asignamos valores a las variables globales
-        bin = (isBin);
-        alfa = (!isNumber);
+            //habilitar los botones para permitir la codificación
+            binario.attr('disabled', false);
+            decimal.attr('disabled', false);
 
-        //llamamos a las funciones de cambio de estado
-        checkBinStatus();
-        checkAlfaStatus();
-        checkIfAllOk();
+            //evaluamos si el valor ingresado contiene solo digitos y si es un posible binario
+            var isNumber = val.match(new RegExp('^[0-9]+$'));
+            var isBin = val.search(/^[10]+$/) != -1;
+
+            //asignamos valores a las variables globales
+            bin = (isBin);
+            alfa = (!isNumber);
+
+            //llamamos a las funciones de cambio de estado
+            checkBinStatus();
+            checkAlfaStatus();
+            checkIfAllOk();
+
+        } else {
+
+            //no hay nada ingresado o se ha borrado
+            binario.attr('disabled', true);
+            decimal.attr('disabled', true);
+        }
     }
 
 
@@ -82,6 +98,7 @@ $(document).ready(function() {
     //ejecutar la funcion de reinicio con el boton de reinicio
     reset.on('click', function() {
         console.clear();
+        resultado.hide();
         resetStatus();
     });
 

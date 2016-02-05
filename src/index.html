@@ -73,22 +73,26 @@
                 </div>
             </div>
 
-            <form class="ui large form">
                 <div class="ui stacked segment">
 
+                    <form class="ui large form">
 
-                    <div class="field">
-                        <input type="tel" id="numero" placeholder="Favor ingresar un número" autofocus>
-                    </div>
+                        <div class="field">
+                            <input type="tel" id="numero" placeholder="Favor ingresar un número" autofocus>
+                        </div>
+
+                    </form>
+
+                    <div class="ui divider"></div>
 
                     <div class="field">
                         <div class="ui fluid buttons">
-                            <button class="ui yellow button binario">
+                            <button class="ui yellow button binario" disabled>
                                 <i class="calculator icon"></i>
                                 Binario
                             </button>
                             <div class="or"></div>
-                            <button class="ui teal button decimal">
+                            <button class="ui teal button decimal" disabled>
                                 <i class="calculator icon"></i>
                                 Decimal
                             </button>
@@ -107,9 +111,8 @@
 
                 </div>
 
-                <div class="ui error message"></div>
+                <div class="ui error message hidden"></div>
 
-            </form>
 
             <div class="ui message">
                 <button type="reset" class="ui fluid grey button reset">
@@ -124,5 +127,5 @@
 </html>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/semantic.min.js"></script>
+<!--<script src="js/semantic.min.js"></script>-->
 <script src="js/main.js"></script>
