@@ -175,8 +175,6 @@ $(document).ready(function () {
 
             console.log('tempNeg', tempNeg);
 
-            //TODO sumar 1 a los digitos
-
             var stop = false;
 
             for (var i = cantidad-1; i >= -1; i --) {
