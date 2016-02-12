@@ -50,7 +50,7 @@ $(document).ready(function () {
         //si es positivo, deshabilitamos los botones
         if (!int) {
             messageBox.removeClass().addClass('ui icon message estado purple');
-            messageText.text('Gracias de ingresar un número entero.');
+            messageText.text('Gracias de ingresar un número entero positivo.');
             messageIcon.removeClass().addClass('info announcement icon');
             decimal.attr('disabled', true);
         }
@@ -77,7 +77,7 @@ $(document).ready(function () {
             decimal.attr('disabled', false);
 
             //evaluamos si el valor ingresado contiene solo digitos y si es un posible binario
-            var isNumber = val.match(new RegExp('^[0-9\-]+$'));
+            var isNumber = val.match(new RegExp('^[0-9]+$'));
             var isBin = val.search(/^[10]+$/) != -1;
 
             //asignamos valores a las variables globales
@@ -118,29 +118,32 @@ $(document).ready(function () {
             var arg1 = parseInt(args / 2);
             var arg2 = args % 2;
             args = arg1;
-            if (res1 == 999) {
+            if (res1 === 999) {
                 res1 = arg2.toString();
             }
             else {
                 res1 = arg2.toString() + res1.toString();
             }
         }
-        if (args == 1 && res1 != 999) {
+        if (args === 1 && res1 !== 999) {
             res1 = args.toString() + res1.toString();
         }
-        else if (args == 0 && res1 == 999) {
+        else if (args === 0 && res1 === 999) {
             res1 = 0;
         }
-        else if (res1 == 999) {
+        else if (res1 === 999) {
             res1 = 1;
         }
         var ll = res1.length;
-        while (ll % 4 != 0) {
+        while (ll % 16 !== 0) {
             res1 = "0" + res1;
             ll = res1.length;
         }
 
         return normalize(res1);
+    }
+
+    function convertToBin2() {
 
     }
 
@@ -156,11 +159,61 @@ $(document).ready(function () {
         var cantidad = digitos.length;
         var potencia = digitos.length - 1;
         var suma = 0;
+        var isPosisive = (+digitos.charAt(0) !== 0);
+        var tempNeg = '';
+        var tempNeg2 = '';
+
+
+        if(!isPosisive) {
+
+            console.info('el numero es negativo');
+
+            for (var i = 0; i < cantidad; i ++) {
+                console.log('digitos:', +digitos.charAt(i));
+                tempNeg += (+digitos.charAt(i) === 0) ? '1' : '0';
+            }
+
+            console.log('tempNeg', tempNeg);
+
+            //TODO sumar 1 a los digitos
+
+            var stop = false;
+
+            for (var i = cantidad-1; i >= -1; i --) {
+
+                var test = +tempNeg.charAt(i);
+
+                if(test === 0 && !stop) {
+
+                    tempNeg2 = '1' + tempNeg2;
+                    console.warn('test = 0', i, tempNeg2);
+                    stop = true;
+                } else if (test === 1 && !stop){
+                    tempNeg2 = '0' + tempNeg2;
+                    console.warn('test = 1', i, tempNeg2);
+                } else {
+                    tempNeg2 = +tempNeg.charAt(i) + tempNeg2;
+                    console.warn('test = rest', i, tempNeg2);
+                }
+
+
+                //console.log('k',i, tempNeg2);
+
+                tempNeg = tempNeg2;
+            }
+
+
+        } else {
+            tempNeg = digitos;
+        }
+
 
         for (var i = 0; i < cantidad; i ++) {
-            suma += +digitos.charAt(i) * (1 << potencia);
+            suma += +tempNeg.charAt(i) * (1 << potencia);
             potencia--;
         }
+
+        suma = (isPosisive) ? suma : suma * (-1);
 
         return normalize(suma);
     }
@@ -204,4 +257,3 @@ $(document).ready(function () {
         convertToDec();
     });
 });
-
